@@ -51,5 +51,19 @@ namespace RomanNumerals.Test
             Assert.AreEqual("IX", result);
         }
 
+        [Test]
+        public void If_I_Enter_a_12_then_I_should_get_a_XII_back()
+        {
+            //Arrange
+            var number = "12";
+            var convertNumber = int.Parse(number);
+            var numeral = new Numerals();
+
+            //Act
+            var result = numeral.ConvertNumber(convertNumber);
+
+            //Assert
+            Assert.AreEqual("XII", result);
+        }
     }
 }
