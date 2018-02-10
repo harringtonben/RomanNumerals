@@ -110,5 +110,80 @@ namespace RomanNumerals.Test
             //Assert
             Assert.AreEqual("XLIV", result);
         }
+
+        [Test]
+        public void If_I_Enter_a_45_then_I_should_get_a_XLV_back()
+        {
+            //Arrange
+            var number = "45";
+            var convertNumber = int.Parse(number);
+            var numeral = new Numerals();
+
+            //Act
+            var result = numeral.ConvertNumber(convertNumber);
+
+            //Assert
+            Assert.AreEqual("XLV", result);
+        }
+
+        [Test]
+        public void If_I_Enter_a_68_then_I_should_get_a_LXVIII_back()
+        {
+            //Arrange
+            var number = "68";
+            var convertNumber = int.Parse(number);
+            var numeral = new Numerals();
+
+            //Act
+            var result = numeral.ConvertNumber(convertNumber);
+
+            //Assert
+            Assert.AreEqual("LXVIII", result);
+        }
+
+        [Test]
+        public void If_I_Enter_a_83_then_I_should_get_a_LXXXIII_back()
+        {
+            //Arrange
+            var number = "83";
+            var convertNumber = int.Parse(number);
+            var numeral = new Numerals();
+
+            //Act
+            var result = numeral.ConvertNumber(convertNumber);
+
+            //Assert
+            Assert.AreEqual("LXXXIII", result);
+        }
+
+        [Test]
+        public void If_I_Enter_a_97_then_I_should_get_a_XCVII_back()
+        {
+            //Arrange
+            var number = "97";
+            var convertNumber = int.Parse(number);
+            var numeral = new Numerals();
+
+            //Act
+            var result = numeral.ConvertNumber(convertNumber);
+
+            //Assert
+            Assert.AreEqual("XCVII", result);
+        }
+
+        [Test]
+        public void If_I_Enter_a_99_then_I_should_get_a_XCIX_back()
+        {
+            //Arrange
+            var number = "99";
+            var convertNumber = int.Parse(number);
+            var numeral = new Numerals();
+
+            //Act
+            var result = numeral.ConvertNumber(convertNumber);
+
+            //Assert
+            Assert.AreEqual("XCIX", result);
+        }
     }
 }
