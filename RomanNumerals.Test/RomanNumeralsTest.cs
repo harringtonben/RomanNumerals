@@ -230,5 +230,125 @@ namespace RomanNumerals.Test
             //Assert
             Assert.AreEqual("DCXLIX", result);
         }
+
+        [Test]
+        public void If_I_Enter_a_798_then_I_should_get_a_DCCXCVIII_back()
+        {
+            //Arrange
+            var number = "798";
+            var convertNumber = int.Parse(number);
+            var numeral = new Numerals();
+
+            //Act
+            var result = numeral.ConvertNumber(convertNumber);
+
+            //Assert
+            Assert.AreEqual("DCCXCVIII", result);
+        }
+
+        [Test]
+        public void If_I_Enter_a_891_then_I_should_get_a_DCCCXCI_back()
+        {
+            //Arrange
+            var number = "891";
+            var convertNumber = int.Parse(number);
+            var numeral = new Numerals();
+
+            //Act
+            var result = numeral.ConvertNumber(convertNumber);
+
+            //Assert
+            Assert.AreEqual("DCCCXCI", result);
+        }
+
+        [Test]
+        public void If_I_Enter_a_1000_then_I_should_get_a_M_back()
+        {
+            //Arrange
+            var number = "1000";
+            var convertNumber = int.Parse(number);
+            var numeral = new Numerals();
+
+            //Act
+            var result = numeral.ConvertNumber(convertNumber);
+
+            //Assert
+            Assert.AreEqual("M", result);
+        }
+
+        [Test]
+        public void If_I_Enter_a_1004_then_I_should_get_a_MIV_back()
+        {
+            //Arrange
+            var number = "1004";
+            var convertNumber = int.Parse(number);
+            var numeral = new Numerals();
+
+            //Act
+            var result = numeral.ConvertNumber(convertNumber);
+
+            //Assert
+            Assert.AreEqual("MIV", result);
+        }
+
+        [Test]
+        public void If_I_Enter_a_1006_then_I_should_get_a_MVI_back()
+        {
+            //Arrange
+            var number = "1006";
+            var convertNumber = int.Parse(number);
+            var numeral = new Numerals();
+
+            //Act
+            var result = numeral.ConvertNumber(convertNumber);
+
+            //Assert
+            Assert.AreEqual("MVI", result);
+        }
+
+        [Test]
+        public void If_I_Enter_a_1023_then_I_should_get_a_MXXIII_back()
+        {
+            //Arrange
+            var number = "1023";
+            var convertNumber = int.Parse(number);
+            var numeral = new Numerals();
+
+            //Act
+            var result = numeral.ConvertNumber(convertNumber);
+
+            //Assert
+            Assert.AreEqual("MXXIII", result);
+        }
+
+        [Test]
+        public void If_I_Enter_a_2014_then_I_should_get_a_MMXIV_back()
+        {
+            //Arrange
+            var number = "2014";
+            var convertNumber = int.Parse(number);
+            var numeral = new Numerals();
+
+            //Act
+            var result = numeral.ConvertNumber(convertNumber);
+
+            //Assert
+            Assert.AreEqual("MMXIV", result);
+        }
+
+        [Test]
+        public void If_I_Enter_a_3999_then_I_should_get_a_MMMCMXCIX_back()
+        {
+            //Arrange
+            var number = "3999";
+            var convertNumber = int.Parse(number);
+            var numeral = new Numerals();
+
+            //Act
+            var result = numeral.ConvertNumber(convertNumber);
+
+            //Assert
+            Assert.AreEqual("MMMCMXCIX", result);
+        }
     }
 }

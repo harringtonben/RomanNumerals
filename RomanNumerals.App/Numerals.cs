@@ -14,6 +14,18 @@ namespace RomanNumerals.App
 
             while (number > 0)
             {
+                if (number >= 1000)
+                {
+                    numeralReturn += "M";
+                    number -= 1000;
+                    continue;
+                }
+                if (number >= 900)
+                {
+                    numeralReturn += "CM";
+                    number -= 900;
+                    continue;
+                }
                 if (number >= 500)
                 {
                     numeralReturn += "D";
