@@ -7,7 +7,7 @@ namespace RomanNumerals.Test
     public class RomanNumeralsTest
     {
         [Test]
-        public void If_I_Enter_a_1_then_I_should_get_a_one_back()
+        public void If_I_Enter_a_1_then_I_should_get_a_I_back()
         {
             //Arrange
             var number = "1";
@@ -20,5 +20,36 @@ namespace RomanNumerals.Test
             //Assert
             Assert.AreEqual("I", result);
         }
+
+        [Test]
+        public void If_I_Enter_a_5_then_I_should_get_a_V_back()
+        {
+            //Arrange
+            var number = "5";
+            var convertNumber = int.Parse(number);
+            var numeral = new Numerals();
+
+            //Act
+            var result = numeral.ConvertNumber(convertNumber);
+
+            //Assert
+            Assert.AreEqual("V", result);
+        }
+
+        [Test]
+        public void If_I_Enter_a_9_then_I_should_get_a_IX_back()
+        {
+            //Arrange
+            var number = "9";
+            var convertNumber = int.Parse(number);
+            var numeral = new Numerals();
+
+            //Act
+            var result = numeral.ConvertNumber(convertNumber);
+
+            //Assert
+            Assert.AreEqual("IX", result);
+        }
+
     }
 }

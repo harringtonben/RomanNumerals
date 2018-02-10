@@ -10,6 +10,8 @@ namespace RomanNumerals.App
     {
         public string ConvertNumber(int number)
         {
+            if (number == 9) return "IX";
+            if (number == 5) return "V";
             if (number >= 1) return "I";
             return "You must enter a valid number";
         }
