@@ -14,6 +14,18 @@ namespace RomanNumerals.App
 
             while (number > 0)
             {
+                if (number >= 500)
+                {
+                    numeralReturn += "D";
+                    number -= 500;
+                    continue;
+                }
+                if (number >= 100)
+                {
+                    numeralReturn += "C";
+                    number -= 100;
+                    continue;
+                }
                 if (number >= 90)
                 {
                     numeralReturn += "XC";

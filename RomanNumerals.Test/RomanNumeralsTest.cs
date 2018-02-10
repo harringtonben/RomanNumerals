@@ -185,5 +185,50 @@ namespace RomanNumerals.Test
             //Assert
             Assert.AreEqual("XCIX", result);
         }
+
+        [Test]
+        public void If_I_Enter_a_500_then_I_should_get_a_D_back()
+        {
+            //Arrange
+            var number = "500";
+            var convertNumber = int.Parse(number);
+            var numeral = new Numerals();
+
+            //Act
+            var result = numeral.ConvertNumber(convertNumber);
+
+            //Assert
+            Assert.AreEqual("D", result);
+        }
+
+        [Test]
+        public void If_I_Enter_a_501_then_I_should_get_a_DI_back()
+        {
+            //Arrange
+            var number = "501";
+            var convertNumber = int.Parse(number);
+            var numeral = new Numerals();
+
+            //Act
+            var result = numeral.ConvertNumber(convertNumber);
+
+            //Assert
+            Assert.AreEqual("DI", result);
+        }
+
+        [Test]
+        public void If_I_Enter_a_649_then_I_should_get_a_DCXLIX_back()
+        {
+            //Arrange
+            var number = "649";
+            var convertNumber = int.Parse(number);
+            var numeral = new Numerals();
+
+            //Act
+            var result = numeral.ConvertNumber(convertNumber);
+
+            //Assert
+            Assert.AreEqual("DCXLIX", result);
+        }
     }
 }
